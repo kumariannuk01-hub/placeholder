@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #0b1b33;
+  --navy-deep: #06101f;
+  --navy-muted: #1a2d4a;
+  --blue: #2f6bff;
+  --blue-soft: #5b8cff;
+  --blue-mist: #e8f0ff;
+  --slate: #5a6b85;
+  --slate-light: #8a97ab;
+  --surface: #f5f7fb;
+  --surface-elevated: #ffffff;
+  --border: rgba(11, 27, 51, 0.08);
+  --border-strong: rgba(11, 27, 51, 0.14);
+  --background: #ffffff;
+  --foreground: #0b1b33;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-muted: var(--navy-muted);
+  --color-blue: var(--blue);
+  --color-blue-soft: var(--blue-soft);
+  --color-blue-mist: var(--blue-mist);
+  --color-slate: var(--slate);
+  --color-slate-light: var(--slate-light);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-syne);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(47, 107, 255, 0.18);
+  color: var(--navy);
+}
+
+.font-display {
+  font-family: var(--font-syne), var(--font-dm-sans), sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.glass-dark {
+  background: rgba(11, 27, 51, 0.55);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gradient-mesh {
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(47, 107, 255, 0.12), transparent 55%),
+    radial-gradient(ellipse 70% 50% at 85% 20%, rgba(91, 140, 255, 0.1), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 50% 90%, rgba(11, 27, 51, 0.04), transparent 55%),
+    linear-gradient(180deg, #f8faff 0%, #ffffff 45%, #f5f7fb 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-muted) 45%, var(--blue) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
