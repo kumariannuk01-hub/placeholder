@@ -16,7 +16,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "placeholder name — AI Competitive Intelligence for Pharma Strategy Teams",
+  title: "Strategen — AI Competitive Intelligence for Pharma Strategy Teams",
   description:
     "An AI Competitive Intelligence platform that helps pharma strategy teams continuously monitor competitors, transform signals into strategic intelligence, and make better decisions with explainable, evidence-backed recommendations.",
   keywords: [

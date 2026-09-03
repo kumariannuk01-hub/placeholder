@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import {
+  ArrowRight,
   Globe2,
   Layers3,
   MapPinned,
@@ -35,6 +37,8 @@ const differentiators = [
     title: "War Gaming & Analog Analysis",
     description:
       "Model competitive scenarios, evaluate strategic options, and learn from historical analogs to prepare for multiple possible outcomes.",
+    href: "/war-gaming",
+    cta: "Open prototype",
   },
   {
     icon: MapPinned,
@@ -73,6 +77,15 @@ export function WhyChoose() {
               <p className="mt-3 text-[15px] leading-relaxed text-slate">
                 {item.description}
               </p>
+              {"href" in item && item.href ? (
+                <Link
+                  href={item.href}
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-blue transition-colors hover:text-navy"
+                >
+                  {item.cta}
+                  <ArrowRight size={14} />
+                </Link>
+              ) : null}
             </GlassCard>
           );
         })}

@@ -57,7 +57,7 @@ function MockUI({ active }: { active: string }) {
         <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
         <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
         <span className="ml-3 text-[11px] tracking-wide text-white/35">
-          placeholder name — Strategy Workspace
+          Strategen — Strategy Workspace
         </span>
       </div>
 

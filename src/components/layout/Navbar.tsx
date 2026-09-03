@@ -9,6 +9,7 @@ const links = [
   { label: "Approach", href: "#why" },
   { label: "Platform", href: "#platform" },
   { label: "Capabilities", href: "#capabilities" },
+  { label: "War Gaming", href: "/war-gaming" },
   { label: "Enterprise", href: "#enterprise" },
 ];
 
@@ -36,7 +37,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:h-[72px]">
         <a href="#top" className="font-display text-lg font-semibold tracking-tight text-navy">
-          placeholder name
+          Strategen
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">

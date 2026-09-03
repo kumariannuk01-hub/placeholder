@@ -1,4 +1,4 @@
-# placeholder name
+# Strategen
 
 AI Competitive Intelligence Operating System landing page for pharmaceutical and biotech companies.
 

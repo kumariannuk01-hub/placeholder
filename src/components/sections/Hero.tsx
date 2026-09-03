@@ -18,7 +18,7 @@ export function Hero() {
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-sm font-semibold tracking-[0.18em] text-blue uppercase"
         >
-          placeholder name
+          Strategen
         </motion.p>
 
         <motion.h1
